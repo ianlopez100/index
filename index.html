@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Guia1</title>
+</head>
+<body>
+	 <section id="formulario">
+        <form name="fmregistro" method="post" action="principal.html">
+            <h1>FORMULARIO DE REGISTRO</h1>
+            <label id="label">Complete el formulario con sus datos</label>
+            
+            <label id="label">
+                <p id="linea">&nbsp;</p>
+                Nombres y apellidos<br>
+                <input name="txtnombres" type="text" id="caja" size="55" placeholder="Ingrese datos completos" required/>
+            </label><br><br>
+
+            <label id="label">DNI<br>
+                <input type="text" id="caja" name="txtdni" size="55" placeholder="8 caracteres" disabled/>
+            </label><br><br>
+
+            <label id="label">Teléfono<br>
+                <input type="tel" id="caja" name="txtfono" size="55"/>
+            </label><br><br>
+
+            <label id="label">Estudios realizados</label><br>
+            <label id="label">
+                <input type="checkbox" name="chkprimaria" checked="checked"/>Primaria
+            </label><br>
+            <label id="label">
+                <input type="checkbox" name="chksecundaria"/>Secundaria
+            </label><br>
+            <label id="label">
+                <input type="checkbox" name="chktecnico"/>Técnico
+            </label><br>
+            <label id="label">
+                <input type="checkbox" name="chkuniversitario"/>Universitario
+            </label>
+            <br><br>
+
+            <label id="label">Estado civil</label>
+            <label id="label"><br>
+                <input type="radio" name="btnestado" value="s" checked="checked"/>Soltero<br>
+            </label>
+            <label id="label">
+                <input type="radio" name="btnestado" value="c"/>Casado<br>
+            </label>
+            <label id="label">
+                <input type="radio" name="btnestado" value="v"/>Viudo<br>
+            </label>
+            <label id="label">
+                <input type="radio" name="btnestado" value="d"/>Divorciado<br>
+            </label>
+            <br><br>
+
+            <label id="label">Provincia</label><br>
+            <input type="text" name="txtprovincia" list="provincias"/>
+            
+            <datalist id="provincias">
+            	<option value="Lima"></option>
+            	<option value="Arequipa"></option>
+            	<option value="Tacma"></option>
+            	<option value="Trujillo"></option>
+            	<option value="Huancayo"></option>
+            </datalist>
+            <br><br>
+        	<label id="label">Correo electrónico<br>
+        		<input type="email" id="caja" size="55" name="txtemail">
+        	</label>
+        	<br><br>
+        	<label id="label">Clave personal<br>
+        		<input type="password" id="caja" name="txtclave" size="55" placeholder="Máximo 6 caracteres">
+			</label>
+			<br><br>
+			<label id="label">Color de preferencia
+				<input type="color" name="txtcolor">
+			</label>
+			<br><br>
+			<label id="label">Fecha de Nacimiento<br>
+				<input type="datetime-local" name="txtfecha">
+			</label>
+			<br><br>
+			<input type="submit" name="registrar">
+			<input type="reset" name="limpiar">
+		</form>
+	</section>
+	 <hr noshade="5px" size="5px">
+	<center>
+	<h4>Tics I - 2025 <br>Elaborado por ILV</h6>
+	</center>
+</body>
+</html>
